@@ -1,12 +1,23 @@
-package bot;
+package scr;
 
 import java.util.Scanner;
 
 public class SimpleBot {
-    final static Scanner scanner = new Scanner(System.in); // Do not change this line
+    // scanner is declare with final static because scanner with bond with class not with object.
+    final static Scanner scanner = new Scanner(System.in);
+
+    /**
+     * these are the available function present in Simple Chat Bot Program.
+     * these are present in main function .
+     * @param args
+     */
 
     public static void main(String[] args) {
-        greet("Aid", "2018"); // change it as you need
+        /**
+         * In greet function bot will introduce itself again human entity. By default the name of bot is "Acid" and made in "2018".
+         */
+        greet("Aid", "2018");
+        // remindName function will asked the human entity about its information.
         remindName();
         guessAge();
         count();
